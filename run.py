@@ -1,6 +1,5 @@
 import games
 import heuristic
-import heuristicRober
 game = games.ConnectFour()
 state = game.initial
 aux=0
@@ -61,7 +60,8 @@ while aux==0:
             print "Ha decidido comenzar la partida, elija el nivel de dificultad\n"
             g = int(input("Seleccione: 0 para nivel facil, 1 para intermedio o 2 para nivel avanzado\n"))
             if g!=0 and g!=1 and g!=2:
-                print chr(27) + "[0;31m" + "No ha introducido una opcion valida, vuelva a intentarlo\n" + chr(27) + "[0m"
+                print chr(27) + "[0;31m" + "No ha introducido una opcion valida, jugara con nivel intermedio\n" + chr(27) + "[0m"
+                dificultad=3
             elif g==0: dificultad=1
             elif g==1: dificultad=3
             elif g==2: dificultad=4
@@ -71,8 +71,9 @@ while aux==0:
             print "Ha decidido comenzar la partida, elija el nivel de dificultad\n"
             g = int(input("Seleccione: 0 para nivel facil, 1 para intermedio o 2 para nivel avanzado\n"))
             if g != 0 and g != 1 and g != 2:
-                print chr(27) + "[0;31m" + "No ha introducido una opcion valida, vuelva a intentarlo\n" + chr(
+                print chr(27) + "[0;31m" + "No ha introducido una opcion valida, jugara con nivel intermedio\n" + chr(
                     27) + "[0m"
+                difiultad=3
             elif g == 0: dificultad = 1
             elif g == 1: dificultad = 3
             elif g == 2: dificultad = 4
@@ -80,4 +81,4 @@ while aux==0:
             state.to_move = 'X'
             quienEmpieza(state,player='X')
         else:
-            print chr(27) + "[0;31m" + "No ha introducido una opcion valida, vuelva a intentarlo\n" + chr(27) + "[0m"
+            print chr(27) + "[0;31m" + "No ha introducido una opcion valida\n" + chr(27) + "[0m"
