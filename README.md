@@ -1,6 +1,6 @@
 #Fundamentos de los sistemas de los sistemas inteligentes. 
 ##Conecta 4.
-Para la realización de esta práctica se han modificado los ficheros run.py, games.py y además se ha añadido un nuevo fichero llamado __heuristic.py__.
+Para la realización de esta práctica se han modificado los ficheros run.py, games.py y además se ha añadido un nuevo fichero llamado heuristic.py.
 
 
 El fichero __run.py__ se ha sido modificado para permitir al usuario elegir si desea empezar él la partida o no, para permitir enfrentar directamente a dos heurísticas entre sí y para poder seleccionar la dificultad en cada partida. En el caso de optar por la opción de enfrentar a dos heurísticas, ambas compiten al máximo nivel de dificultad por defecto.
