@@ -39,7 +39,7 @@ def maquinaVSmaquina(state):
         print "-------------------"
         game.display(state)
         print chr(27)+"[0;36m"+"Thinking O...\n"+chr(27)+"[0m"
-        move = games.alphabeta_search(state, game, eval_fn=heuristicRober.h0,player='O', d=4)
+        move = games.alphabeta_search(state, game, eval_fn=heuristic.h1,player='O', d=4)
         state = game.make_move(move, state)
         print "-------------------"
     game.display(state)
